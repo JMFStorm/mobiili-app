@@ -90,7 +90,6 @@ export default function App() {
 
   const nameInFavourites = React.useCallback(
     (name) => {
-      console.log("favourites", favourites);
       const exists = favourites?.find((x) => x.name == name);
       return Boolean(exists);
     },
